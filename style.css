@@ -65,3 +65,18 @@ body {
   text-decoration: none;
   padding: 8px, 16px;
 }
+
+.social-icons {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.linkedin-icon {
+  color: #0077b5;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.linkedin-icon:hover {
+  color: #00548c;
+}

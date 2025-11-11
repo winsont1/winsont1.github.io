@@ -1,82 +1,88 @@
-body {
-  background-color: black;
-  color: white;
-  font-family: 'Courier New', Courier, monospace;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  /* margin: 0; */
+h2 {
+  color: #fe520c;
+  font-size: 20px;
+  font-family: arial;
 }
 
-.dojo-sign {
-  font-size: 3rem;
-  color: #ffcc00;
-  text-shadow: 0 0 10px #ffcc00, 0 0 20px #ff9900, 0 0 30px #ff6600;
-  animation: blink 1s infinite;
-}
-
-@keyframes blink {
-
-  0%,
-  49% {
-    opacity: 1;
-    text-shadow: 0 0 10px #ffcc00, 0 0 20px #ff9900, 0 0 30px #ff6600;
-  }
-
-  50%,
-  100% {
-    opacity: 0.3;
-    text-shadow: 0 0 5px #ffcc00, 0 0 10px #ff9900, 0 0 15px #ff6600;
-  }
-}
-
-/* .container {
-  width: 700px;
-  background-color: black;
-  font-family: 'Courier New', Courier, monospace;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-} */
-
-
-.button-dark {
-  margin: 20px auto;
-  background-color: black;
-  text-align: center;
-  border-radius: 10px;
-  padding: 8px 16px;
-  width: 50px;
-  transition: background-color 0.6s ease;
-}
-
-.button-dark:hover {
-  background-color: rgba(128, 128, 128, 0.244);
-  border-color: rgba(255, 255, 255, 0.548);
-  border: 1px 1px 1px 1px;
-  border-style: solid;
-}
-
-.button-dark > a {
-  color: white;
+a {
   text-decoration: none;
-  padding: 8px, 16px;
 }
 
-.social-icons {
-  margin-top: 20px;
+.white-card {
+  background: white;
+  padding: 30px;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
+  margin: 5px auto;
   text-align: center;
 }
 
-.linkedin-icon {
-  color: #0077b5;
-  font-size: 24px;
-  transition: color 0.3s ease;
+.img-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
 }
 
-.linkedin-icon:hover {
-  color: #00548c;
+.shadowed {
+  box-shadow: 5px 5px 3px black;
 }
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.btn-blue {
+  background-color: lightblue;
+  border-radius: 5px;
+  color: white;
+  padding: 8px 16px;
+}
+
+.btn-blue:hover {
+  background-color: rgb(4, 4, 121);
+}
+
+i {
+  color: darkgreen;
+  font-size: 50px;
+}
+
+i:hover{
+  color: black;
+}
+
+.list-inline > li{
+  display: inline;
+}
+
+.list-inline {
+  padding: 0;
+}
+
+
+@media (max-width: 960px) {
+
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
+
+
